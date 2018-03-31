@@ -11,8 +11,8 @@ Time spent: **10** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: ![](https://user-images.githubusercontent.com/35437875/38159256-bdcef75e-3472-11e8-9e63-be944937a01b.gif)
-  - [ ] Steps to recreate: Go to website linked under "affected source code" and copy the code noted under "Proof of Concept". Go to the wordpress website (not as admin), view a post and fill in the reply's comment with the copied text. When inputting in the text, substitute "AAAAA .. [64kb]//AAA" with a 64kb text file. Post the reply and note the alert that pops up with the broken website.
+  - [ ] GIF Walkthrough: ![](https://user-images.githubusercontent.com/35437875/38159256-bdcef75e-3472-11e8-9e63-be944937a01b.gif)
+  - [ ] Steps to recreate:  Go to website linked under "affected source code" and copy the code noted under "Proof of Concept". Go to the wordpress website (not as admin), view a post and fill in the reply's comment with the copied text. When inputting in the text, substitute "AAAAA .. [64kb]//AAA" with a 64kb text file. Post the reply and note the alert that pops up with the broken website.
   - [ ] Affected source code:
     - [Link 1](https://klikki.fi/adv/wordpress2.html)
 1. (Required) Authenticated Stored Cross-Site Scripting (XSS)
