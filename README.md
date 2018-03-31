@@ -21,7 +21,7 @@ Time spent: **10** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
   - [ ] GIF Walkthrough: ![](https://user-images.githubusercontent.com/35437875/38166238-6eac7b2a-34ee-11e8-8f6d-b8e88cc15f97.gif)
-  - [ ] Steps to recreate: Go to the link noted under "affected source code" and copy the first code noted under "details". Make a new post as admin and input the copied text into the body of the post. Then submit and view the post to see an alert come up when hovering over the post. 
+  - [ ] Steps to recreate: Go to the link noted under "affected source code" and copy the first code noted under "details". Make a new post as admin and input the copied text into the body of the post. Then submit and view the post to see an alert come up when hovering over the post's link. 
   - [ ] Affected source code:
     - [Link 1](https://klikki.fi/adv/wordpress3.html)
 1. (Required) Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
@@ -29,11 +29,11 @@ Time spent: **10** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.13
-  - [ ] GIF Walkthrough: ![](https://user-images.githubusercontent.com/35437875/38159274-fe6338f2-3472-11e8-80b8-74585718c29d.gif)
+  - [ ] GIF Walkthrough: ![](https://user-images.githubusercontent.com/35437875/38166571-ea1cf19a-34f3-11e8-9919-4c01a11de7c1.gif)
   - [ ] Steps to recreate: When making a new post, input in the body: https://www.youtube.com/watch?v=<SCRIPT>alert('XSS')</SCRIPT> 
-Then publish the post and view the post on the website, an alert should come up. 
+Then highlight the url to insert a link, this will cause an alert to popup. 
   - [ ] Affected source code:
-    - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
+    - [Link 1](https://user-images.githubusercontent.com/35437875/38166560-aabfae8e-34f3-11e8-8f71-8741609dbc2d.gif)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
