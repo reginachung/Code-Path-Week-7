@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **8** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -15,7 +15,7 @@ Time spent: **X** hours spent in total
   - [ ] Steps to recreate: Go to the wordpress website (not as admin), view a post and fill in the comment: <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  [64 kb]'></a>
  where [64 kb] is a 64 kb text file. 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://klikki.fi/adv/wordpress2.html)
 1. (Required) Authenticated Stored Cross-Site Scripting (XSS)
   - [ ] Summary: When hovering over the post's link, an alert popped up.
     - Vulnerability types: XSS
@@ -25,7 +25,7 @@ Time spent: **X** hours spent in total
   - [ ] Steps to recreate: Make a new post as admin and input into the body of the post: <a href="[caption code=">]</a><a title=" onmouseover=alert('test')  ">link</a>
 Then submit and view the post to see an alert come up when hovering over the post. 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://klikki.fi/adv/wordpress3.html)
 1. (Required) Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
   - [ ] Summary: When embeding a Youtube URL in the post with a script alert, an alert will come up.
     - Vulnerability types: XSS
@@ -35,7 +35,7 @@ Then submit and view the post to see an alert come up when hovering over the pos
   - [ ] Steps to recreate: When making a new post, input in the body: https://www.youtube.com/watch?v=<SCRIPT>alert('XSS')</SCRIPT> 
 Then publish the post and view the post on the website, an alert should come up. 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
