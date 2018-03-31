@@ -20,7 +20,7 @@ Time spent: **10** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![](https://user-images.githubusercontent.com/35437875/38166238-6eac7b2a-34ee-11e8-8f6d-b8e88cc15f97.gif)
   - [ ] Steps to recreate: Go to the link noted under "affected source code" and copy the first code noted under "details". Make a new post as admin and input the copied text into the body of the post. Then submit and view the post to see an alert come up when hovering over the post. 
   - [ ] Affected source code:
     - [Link 1](https://klikki.fi/adv/wordpress3.html)
