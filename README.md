@@ -11,14 +11,14 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: ![]()
+  - [ ] GIF Walkthrough: ![](https://user-images.githubusercontent.com/35437875/38159256-bdcef75e-3472-11e8-9e63-be944937a01b.gif)
   - [ ] Steps to recreate: Go to the wordpress website (not as admin), view a post and fill in the comment: <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  [64 kb]'></a>
  where [64 kb] is a 64 kb text file. 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Authenticated Stored Cross-Site Scripting (XSS)
   - [ ] Summary: When hovering over the post's link, an alert popped up.
-    - Vulnerability types:
+    - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
   - [ ] GIF Walkthrough: 
@@ -28,10 +28,10 @@ Then submit and view the post to see an alert come up when hovering over the pos
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
   - [ ] Summary: When embeding a Youtube URL in the post with a script alert, an alert will come up.
-    - Vulnerability types:
+    - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.13
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![](https://user-images.githubusercontent.com/35437875/38159274-fe6338f2-3472-11e8-80b8-74585718c29d.gif)
   - [ ] Steps to recreate: When making a new post, input in the body: https://www.youtube.com/watch?v=<SCRIPT>alert('XSS')</SCRIPT> 
 Then publish the post and view the post on the website, an alert should come up. 
   - [ ] Affected source code:
