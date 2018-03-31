@@ -33,7 +33,7 @@ Time spent: **10** hours spent in total
   - [ ] Steps to recreate: When making a new post, input in the body: https://www.youtube.com/watch?v=<SCRIPT>alert('XSS')</SCRIPT> 
 Then highlight the url to insert a link, this will cause an alert to popup. 
   - [ ] Affected source code:
-    - [Link 1](https://user-images.githubusercontent.com/35437875/38166560-aabfae8e-34f3-11e8-8f71-8741609dbc2d.gif)
+    - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
