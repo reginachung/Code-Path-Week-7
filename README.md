@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **8** hours spent in total
+Time spent: **10** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -12,8 +12,7 @@ Time spent: **8** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
   - [ ] GIF Walkthrough: ![](https://user-images.githubusercontent.com/35437875/38159256-bdcef75e-3472-11e8-9e63-be944937a01b.gif)
-  - [ ] Steps to recreate: Go to the wordpress website (not as admin), view a post and fill in the comment: <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  [64 kb]'></a>
- where [64 kb] is a 64 kb text file. 
+  - [ ] Steps to recreate: Go to website linked under "affected source code" and copy the code noted under "Proof of Concept". Go to the wordpress website (not as admin), view a post and fill in the reply's comment with the copied text. When inputting in the text, substitute "AAAAA .. [64kb]//AAA" with a 64kb text file. Post the reply and note the alert that pops up with the broken website.
   - [ ] Affected source code:
     - [Link 1](https://klikki.fi/adv/wordpress2.html)
 1. (Required) Authenticated Stored Cross-Site Scripting (XSS)
@@ -22,8 +21,7 @@ Time spent: **8** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
   - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: Make a new post as admin and input into the body of the post: <a href="[caption code=">]</a><a title=" onmouseover=alert('test')  ">link</a>
-Then submit and view the post to see an alert come up when hovering over the post. 
+  - [ ] Steps to recreate: Go to the link noted under "affected source code" and copy the first code noted under "details". Make a new post as admin and input the copied text into the body of the post. Then submit and view the post to see an alert come up when hovering over the post. 
   - [ ] Affected source code:
     - [Link 1](https://klikki.fi/adv/wordpress3.html)
 1. (Required) Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
